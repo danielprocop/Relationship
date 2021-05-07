@@ -3,7 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Relationship", "Relationship\Relationship.csproj", "{AE9D6DB1-2189-42F7-9F42-5E6CADAEFF02}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PLDP.Relationship.Web", "Relationship\PLDP.Relationship.Web.csproj", "{AE9D6DB1-2189-42F7-9F42-5E6CADAEFF02}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PLDP.Relationship.Core", "PLDP.Relationship.Core\PLDP.Relationship.Core.csproj", "{6399B361-64C0-45FD-A996-0F4036338A9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PLDP.Relationship.Services", "PLDP.Relationship.Services\PLDP.Relationship.Services.csproj", "{94DAAFFE-5C9E-470C-AB99-94E8CDECE21D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PLDP.Relationship.EF", "PLDP.Relationship.EF\PLDP.Relationship.EF.csproj", "{4F05FF93-7FF5-47A7-80C6-5B801058330C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{FC6F06D1-B898-4DDB-8112-BC47222DFE56}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{85BBB120-4822-453F-92AC-7D7B7433FBB7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PLDP.Relationship.TestServices", "PLDP.Relationship.TestServices\PLDP.Relationship.TestServices.csproj", "{277F4D30-7C23-4FAA-A4CE-2A920F20C4CA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +27,32 @@ Global
 		{AE9D6DB1-2189-42F7-9F42-5E6CADAEFF02}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE9D6DB1-2189-42F7-9F42-5E6CADAEFF02}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE9D6DB1-2189-42F7-9F42-5E6CADAEFF02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6399B361-64C0-45FD-A996-0F4036338A9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6399B361-64C0-45FD-A996-0F4036338A9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6399B361-64C0-45FD-A996-0F4036338A9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6399B361-64C0-45FD-A996-0F4036338A9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94DAAFFE-5C9E-470C-AB99-94E8CDECE21D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94DAAFFE-5C9E-470C-AB99-94E8CDECE21D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94DAAFFE-5C9E-470C-AB99-94E8CDECE21D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94DAAFFE-5C9E-470C-AB99-94E8CDECE21D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F05FF93-7FF5-47A7-80C6-5B801058330C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F05FF93-7FF5-47A7-80C6-5B801058330C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F05FF93-7FF5-47A7-80C6-5B801058330C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F05FF93-7FF5-47A7-80C6-5B801058330C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{277F4D30-7C23-4FAA-A4CE-2A920F20C4CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{277F4D30-7C23-4FAA-A4CE-2A920F20C4CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{277F4D30-7C23-4FAA-A4CE-2A920F20C4CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{277F4D30-7C23-4FAA-A4CE-2A920F20C4CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AE9D6DB1-2189-42F7-9F42-5E6CADAEFF02} = {FC6F06D1-B898-4DDB-8112-BC47222DFE56}
+		{6399B361-64C0-45FD-A996-0F4036338A9B} = {FC6F06D1-B898-4DDB-8112-BC47222DFE56}
+		{94DAAFFE-5C9E-470C-AB99-94E8CDECE21D} = {FC6F06D1-B898-4DDB-8112-BC47222DFE56}
+		{4F05FF93-7FF5-47A7-80C6-5B801058330C} = {FC6F06D1-B898-4DDB-8112-BC47222DFE56}
+		{277F4D30-7C23-4FAA-A4CE-2A920F20C4CA} = {85BBB120-4822-453F-92AC-7D7B7433FBB7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A07B276C-F67E-4ACD-9F4F-EDB0A98CCDAA}

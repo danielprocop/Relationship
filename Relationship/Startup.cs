@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.SpaServices.AngularCli;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using PLDP.Relationship.Person;
 
 namespace Relationship
 {
@@ -26,6 +27,8 @@ namespace Relationship
             {
                 configuration.RootPath = "ClientApp/dist";
             });
+
+            services.AddTransient<GetListOfPersonQueryHandler>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
